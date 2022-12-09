@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #8f8f8f;
+  text-align: center;
+}
+body {
+  height: auto;
+  width: auto;
+  background-image: url("/assets/images/background/Background.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1, h2, h3 {
+  font-family: fantasy;
+  color: #ffffffe3;
+}
+.hero {
+  margin-top: 0.5em;
+}
+h1 {
+  text-align: center;
+}
+h1, h3, img {
+  margin-bottom: 0.6em;
+}
+.img, .img__hero {
+  padding: 1em;
+  padding-left: 0.5em;
+  margin:1.3em;
+  border: 3px solid #000;
+  box-shadow: rgb(27,158,191) 0 0 8px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(18, 17, 23, 0.5);
+}
+img {
+  box-shadow: rgb(78,210,210) 0 0 5px;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+.img p {
+  font-family: sans-serif;
+}
+.container__menu {
+  text-align: center;
+}
+.menu {
+  position: relative;
+  text-align: center;   
+  display: inline-block;
+  color: #03e9f4;
+  text-decoration: none;
+  transition: 300ms;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 65%;
+  font-size: 120%;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 1.1em;
+}
+.menu:hover{
+    background: #03e9f4;
+    border-radius: 10px;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 20px #03e9f4;
+}
+/* Настройка анимации обводки кнопок*/
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+.footer {
+  left: 0; bottom: 0;
+  padding: 1em;
+  background-color: rgb(18, 17, 23, 0.7);
+  width: 100%;
+}
+.footer__menu__copyright__label {
+  float: left;
+}
+
+#telegram {
+  font-size: 2em;
+  color: #fff;
+  animation-delay: 0.7s;
+  padding: 11px 19px;
+  margin: 0 40px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 5px #0072ff, 0 0 10px #0072ff, 0 0 15px #0072ff,
+    0 0 20px #0072ff;
+}
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+/*
+======================================================================================================================================
+*/
+
+
+/*Для героев*/
+.container__menu__hero {
+  text-align: center;
+}
+
+/*Адаптивность img*/
+.img img, .img__hero img, .story__hero img {
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+  max-width: 900px;
+  text-align: center;
+}
+.menu__hero {
+  display: inline-block;
+  text-decoration: none;
+  color: #30b7c0;
+  font-weight: bold;
+  transition: 0.2s;
+  margin: 0.7em;
+  padding: 0.4em;
+}
+.about__hero {
+  margin-bottom: 1em; 
+}
+/*Настройка рамки*/
+figure:hover {
+    border: 3px;
+    box-shadow: #5dccf0 0 0 10px;
+    background: #03e9f4;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 20px #03e9f4;
+}
+figure {
+    border: 1px solid #fff;
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 0 5px 5px; /* Отступы вокруг */
+    box-shadow: rgb(27,158,191) 0 0 8px;
+    border-radius: 10px;
+    
+}
+figcaption {
+    color: #fff;
+}
+hr {
+  box-shadow: rgb(27,158,191) 0 0 8px;
+  border: none;
+  background-color: #03e9f4;
+  height: 2px;
+  margin-bottom: 1.5em;
+}
+.img__hero p {
+  margin-top: 1em;
+}
+.story__hero {
+  border: 3px solid #000;
+  box-shadow: rgb(27,158,191) 0 0 8px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(18, 17, 23, 0.6);
+  margin:1.3em;
+  padding: 1em 0.5em 0.5em 0.5em;
+}
+
+
+
+
+
+
+
+/* Имя шрифта и общие семейства шрифтов:
+
+font-family: Gill Sans Extrabold, sans-serif;
+font-family: "Goudy Bookletter 1911", sans-serif;
+
+Только общие семейства:
+
+font-family: serif;
+font-family: sans-serif;
+font-family: monospace;
+font-family: cursive;
+font-family: fantasy;
+font-family: system-ui;
+font-family: emoji;
+font-family: math;
+font-family: fangsong;
+
+Глобальные значения:
+font-family: inherit;
+font-family: initial;
+font-family: unset;
+*/
+/* шрифт стандартный курсив
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+font-family: 'Roboto', sans-serif;
+*/
+
+/*
+Трехмерная тень хз короче но это круто
+text-shadow: #cad5e2 1px 1px 0, #cad5e2 2px 2px 0, 
+                 #cad5e2 3px 3px 0, #cad5e2 4px 4px 0, 
+                 #cad5e2 5px 5px 0;
+                 
+                 
+ box-shadow: цвет 0 0 0 14; Делает линию
+*/
